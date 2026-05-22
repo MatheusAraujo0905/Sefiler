@@ -1,0 +1,201 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fb;
+    color: #0d3b66;
+}
+
+/* HERO */
+
+.hero{
+    background: linear-gradient(
+        rgba(0,40,90,0.90),
+        rgba(0,40,90,0.90)
+    ),
+    url('fundo.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 100px 20px;
+}
+
+.hero h1{
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 22px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* FUNDADORES */
+
+.fundadores-box{
+    width: 90%;
+
+    margin: auto;
+
+    margin-top: -50px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.fundadores-box h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.fundadores-box p{
+    font-size: 18px;
+}
+
+/* INTEGRANTES */
+
+.integrantes{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    margin-top: 40px;
+
+    flex-wrap: wrap;
+}
+
+.membro{
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.membro:hover{
+    transform: translateY(-10px);
+}
+
+.membro img{
+    width: 160px;
+    height: 160px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.membro h3{
+    margin-top: 12px;
+    font-size: 24px;
+}
+
+/* CARDS */
+
+.info-container{
+    width: 90%;
+
+    margin: 50px auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.info-card{
+    background: white;
+
+    width: 350px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.info-card:hover{
+    transform: translateY(-10px);
+}
+
+.info-card h2{
+    margin-bottom: 15px;
+
+    font-size: 30px;
+}
+
+.info-card p{
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* ODS */
+
+.ODS{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 60px;
+
+    flex-wrap: wrap;
+}
+
+.ods-card img{
+    width: 280px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.ods-card img:hover{
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+    background: #0d3b66;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+footer p{
+    margin: 5px 0;
+}
