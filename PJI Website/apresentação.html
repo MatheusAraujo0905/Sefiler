@@ -122,19 +122,61 @@
     <!-- IMAGENS ODS -->
     <section class="ODS">
 
-        <div class="ods-card">
-            <img src="ods3.jpg" alt="ODS 3">
-        </div>
+    <div class="ods-card">
+        <div class="card-inner">
 
-        <div class="ods-card">
-            <img src="ods4.jpg" alt="ODS 4">
-        </div>
+            <div class="card-front">
+                <img src="ods3.jpg" alt="ODS 3">
+            </div>
 
-        <div class="ods-card">
-            <img src="ods8.jpg" alt="ODS 8">
-        </div>
+            <div class="card-back">
+                <h3>ODS 3</h3>
+                <p>
+                    Saúde e bem-estar: garante vida saudável
+                    e promove qualidade de vida para todos.
+                </p>
+            </div>
 
-    </section>
+        </div>
+    </div>
+
+    <div class="ods-card">
+        <div class="card-inner">
+
+            <div class="card-front">
+                <img src="ods4.jpg" alt="ODS 4">
+            </div>
+
+            <div class="card-back">
+                <h3>ODS 4</h3>
+                <p>
+                    Educação de qualidade: assegura educação inclusiva,
+                    equitativa e de qualidade.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="ods-card">
+        <div class="card-inner">
+
+            <div class="card-front">
+                <img src="ods8.jpg" alt="ODS 8">
+            </div>
+
+            <div class="card-back">
+                <h3>ODS 8</h3>
+                <p>
+                    Trabalho decente e crescimento econômico:
+                    incentiva empregos dignos e economia sustentável.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
 
     <!-- FOOTER -->
     <footer>
@@ -149,6 +191,14 @@
 
     </footer>
 
+    <script>
+    document.querySelectorAll('.ods-card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('flipped');
+        });
+    });
+    </script>
+    
 </body>
 
 </html>
