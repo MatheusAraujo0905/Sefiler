@@ -108,3 +108,26 @@ footer {
     background: #0d3b66;
     color: white;
 }
+
+
+@media (max-width: 767px) {
+    
+    /* 1. Force os blocos a ficarem um embaixo do outro */
+    .sua-div-lado-a-lado {
+        flex-direction: column; /* Se usar Flexbox */
+        display: block;         /* Para layouts comuns */
+        width: 100%;
+    }
+
+    /* 2. Reduza margens e espaçamentos exagerados */
+    .seu-container {
+        padding: 15px;
+        margin: 0;
+    }
+
+    /* 3. Ajuste o tamanho dos textos grandes */
+    h1 {
+        font-size: 24px; 
+    }
+}
+
